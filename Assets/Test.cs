@@ -21,13 +21,13 @@ public class Boss
     //Lesson4発展課題：Magic関数
     public void Magic()
     {
-        this.mp -= 5;
-        if (this.mp > 0)
+        if (this.mp > 5) 
         {
+            this.mp -= 5;
             Debug.Log("魔法攻撃をした。残りMPは" + mp);
         }else{
-            this.mp += 5;
             Debug.Log("MPが足りないため魔法が使えない");
+            //Debug.Log(this.mp);
         }
     }
         
